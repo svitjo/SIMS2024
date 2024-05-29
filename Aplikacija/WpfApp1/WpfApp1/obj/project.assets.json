@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\SIMS2024\\Aplikacija\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
-      "projectName": "WpfApp1",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\SIMS2024\\Aplikacija\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\SIMS2024\\Aplikacija\\WpfApp1\\WpfApp1\\ReservationSystem.csproj",
+      "projectName": "ReservationSystem",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\SIMS2024\\Aplikacija\\WpfApp1\\WpfApp1\\ReservationSystem.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Documents\\GitHub\\SIMS2024\\Aplikacija\\WpfApp1\\WpfApp1\\obj\\",
       "projectStyle": "PackageReference",

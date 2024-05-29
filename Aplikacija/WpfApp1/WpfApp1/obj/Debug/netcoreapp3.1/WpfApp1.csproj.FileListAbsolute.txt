@@ -1,0 +1,5 @@
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\WpfApp1_MarkupCompile.cache
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\WpfApp1_MarkupCompile.lref

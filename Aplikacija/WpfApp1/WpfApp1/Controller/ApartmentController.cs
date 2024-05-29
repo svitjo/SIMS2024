@@ -5,12 +5,14 @@
  ***********************************************************************/
 
 using System;
+using System.Collections.Generic;
+using ReservationSystem.Model;
 
-namespace Controller
+namespace ReservationSystem.Controller
 {
    public class ApartmentController
    {
-      public List<Manager> GetAll()
+      public List<User> GetAll()
       {
          // TODO: implement
          return null;
@@ -22,7 +24,7 @@ namespace Controller
          return false;
       }
       
-      public Manager GetById(String jmbg)
+      public User GetById(String jmbg)
       {
          // TODO: implement
          return null;
@@ -33,8 +35,6 @@ namespace Controller
          // TODO: implement
          return false;
       }
-   
-      public Services.ApartmentService apartmentService;
    
    }
 }

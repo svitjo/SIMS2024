@@ -4,9 +4,11 @@
  * Purpose: Definition of the Class Repository.GuestRepository
  ***********************************************************************/
 
+using ReservationSystem.Model;
 using System;
+using System.Collections.Generic;
 
-namespace Repository
+namespace ReservationSystem.Repository
 {
    public class ReservationRepository
    {

@@ -5,13 +5,17 @@
  ***********************************************************************/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Model
+namespace ReservationSystem.Model
 {
-   public class ReservationStatus
+    public enum ReservationStatus
    {
-      public EnumConstant Approved;
-      public EnumConstant Rejected;
+      Approved,
+      Rejected
    
    }
 }

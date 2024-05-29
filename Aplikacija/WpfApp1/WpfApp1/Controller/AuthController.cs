@@ -5,7 +5,7 @@
 
 using System;
 
-namespace Controller
+namespace ReservationSystem.Controller
 {
    public class AuthController
    {
@@ -20,7 +20,6 @@ namespace Controller
          // TODO: implement
       }
    
-      public Services.AuthService authService;
    
    }
 }

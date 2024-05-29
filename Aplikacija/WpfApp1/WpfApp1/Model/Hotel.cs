@@ -5,8 +5,9 @@
  ***********************************************************************/
 
 using System;
+using System.Collections.Generic;
 
-namespace Model
+namespace ReservationSystem.Model
 {
    public class Hotel
    {

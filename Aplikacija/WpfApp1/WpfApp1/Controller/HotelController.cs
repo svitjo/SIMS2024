@@ -4,13 +4,15 @@
  * Purpose: Definition of the Class Repository.GuestRepository
  ***********************************************************************/
 
+using ReservationSystem.Model;
 using System;
+using System.Collections.Generic;
 
-namespace Controller
+namespace ReservationSystem.Controller
 {
    public class HotelController
    {
-      public List<Manager> GetAll()
+      public List<Hotel> GetAll()
       {
          // TODO: implement
          return null;
@@ -22,7 +24,7 @@ namespace Controller
          return false;
       }
       
-      public Manager GetById(String jmbg)
+      public User GetById(String jmbg)
       {
          // TODO: implement
          return null;
@@ -33,8 +35,6 @@ namespace Controller
          // TODO: implement
          return false;
       }
-   
-      public Services.HotelService hotelService;
    
    }
 }

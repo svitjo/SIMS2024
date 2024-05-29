@@ -4,9 +4,11 @@
  * Purpose: Definition of the Class Services.ReservationService
  ***********************************************************************/
 
+using ReservationSystem.Model;
 using System;
+using System.Collections.Generic;
 
-namespace Services
+namespace ReservationSystem.Service
 {
    public class ReservationService
    {

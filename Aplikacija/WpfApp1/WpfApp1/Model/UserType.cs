@@ -6,14 +6,13 @@
 
 using System;
 
-namespace Model
+namespace ReservationSystem.Model
 {
-   public class UserType
+   public enum UserType
    {
-      public EnumConstant Administrator;
-      public EnumConstant Guest;
-   
-      private EnumConstant Manager;
+      Administrator,
+      Guest,
+      Manager
    
    }
 }

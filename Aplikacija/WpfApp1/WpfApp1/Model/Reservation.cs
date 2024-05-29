@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Model
+namespace ReservationSystem.Model
 {
    public class Reservation
    {

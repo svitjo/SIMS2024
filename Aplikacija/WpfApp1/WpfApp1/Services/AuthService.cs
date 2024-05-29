@@ -5,7 +5,7 @@
 
 using System;
 
-namespace Services
+namespace ReservationSystem.Service
 {
    public class AuthService
    {

@@ -1,9 +1,3 @@
-/***********************************************************************
- * Module:  GuestRepository.cs
- * Author:  User
- * Purpose: Definition of the Class Repository.GuestRepository
- ***********************************************************************/
-
 using ReservationSystem.Model;
 using ReservationSystem.Repository;
 using System;
@@ -12,7 +6,7 @@ using System.Collections.Generic;
 namespace ReservationSystem.Service
 {
     public class UserService
-   {
+    {
         public UserRepository userRepository { get; set; }
 
         public UserService(UserRepository userRepository)
@@ -50,7 +44,5 @@ namespace ReservationSystem.Service
             }
             return false;
         }
-   
- 
-   }
+    }
 }

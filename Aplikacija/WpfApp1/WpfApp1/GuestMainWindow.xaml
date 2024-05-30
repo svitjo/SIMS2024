@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="GuestMainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center">GOST</TextBlock>
+        <DockPanel LastChildFill="True">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Welcome!" IsEnabled="False"/>
+                <MenuItem Header="Hotels" Click="Hotels_Click"/>
+                <MenuItem Header="Reservation" Click="Reservation_Click"/>
+                <MenuItem Header="Logout" Click="Logout_Click"/>
+            </Menu>
+            <ContentControl Name="MainContent" />
+        </DockPanel>
     </Grid>
 </Window>

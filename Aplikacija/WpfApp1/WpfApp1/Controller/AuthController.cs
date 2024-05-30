@@ -24,9 +24,7 @@ namespace ReservationSystem.Controller
       
         public void Logout()
         {
-        // TODO: implement
+            this.authService.Logout();
         }
-   
-   
-        }
+    }
 }

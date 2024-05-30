@@ -12,10 +12,12 @@ namespace ReservationSystem.Service
    public class AuthService
    {
         public UserRepository userRepository;
+        private User currentUser;
 
         public AuthService(UserRepository userRepository)
         {
             this.userRepository = userRepository;
+            this.currentUser = null;
         }
         public bool Login(string email, string password, out UserType userType)
         {
@@ -26,12 +28,13 @@ namespace ReservationSystem.Service
                 return false;
             }
             userType = user.UserType;
+            currentUser = user;
             return true;
         }
       
         public void Logout()
         {
-    
+            currentUser = null;
         }
    }
 }

@@ -18,3 +18,11 @@ C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\net
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\ReservationSystem.dll
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\ReservationSystem.pdb
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\ReservationSystem.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AdminMainWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\GuestMainWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\ManagerMainWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\AdminMainWindow.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\GuestMainWindow.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\ManagerMainWindow.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\ReservationSystem.csproj.CopyComplete

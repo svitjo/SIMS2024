@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\App.xaml
-11407045341
+4-459175204
 
-251804168731
-192-1533232326
-MainWindow.xaml;
+281047297131
+1931491127308
+AdminMainWindow.xaml;GuestMainWindow.xaml;MainWindow.xaml;ManagerMainWindow.xaml;
 
-False
+True
 

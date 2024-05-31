@@ -5,6 +5,7 @@
  ***********************************************************************/
 
 using ReservationSystem.Model;
+using ReservationSystem.Service;
 using System;
 using System.Collections.Generic;
 
@@ -12,11 +13,15 @@ namespace ReservationSystem.Controller
 {
    public class HotelController
    {
-      public List<Hotel> GetAll()
+        private HotelService hotelService;
+        public HotelController(HotelService hotelService)
+        {
+            this.hotelService = hotelService;
+        }
+        public List<Hotel> GetAll()
       {
-         // TODO: implement
-         return null;
-      }
+            return this.hotelService.GetAll();
+        }
       
       public bool Create(String id, String name, int constructionYear, int starRating, String ownerJMBG)
       {

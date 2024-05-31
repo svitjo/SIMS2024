@@ -1,1 +1,26 @@
-﻿
+﻿[
+  {
+    "Id": "1",
+    "Name": "Resort",
+    "ConstructionYear": 2012,
+    "StarRating": 4,
+    "OwnerJMBG": "111",
+    "Apartments": [ {} ]
+  },
+  {
+    "Id": "2",
+    "Name": "Rest",
+    "ConstructionYear": 2000,
+    "StarRating": 5,
+    "OwnerJMBG": "111",
+    "Apartments": [ {} ]
+  },
+  {
+    "Id": "3",
+    "Name": "HotelCentar",
+    "ConstructionYear": 2008,
+    "StarRating": 3,
+    "OwnerJMBG": "111",
+    "Apartments": [ {} ]
+  }
+]

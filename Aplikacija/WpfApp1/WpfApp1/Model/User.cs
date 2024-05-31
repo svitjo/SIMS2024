@@ -17,6 +17,5 @@ namespace ReservationSystem.Model
         public String Lastname { get; set; }
         public String Phone { get; set; }
         public UserType UserType { get; set; }
-
     }
 }

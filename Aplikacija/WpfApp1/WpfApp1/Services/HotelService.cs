@@ -5,6 +5,7 @@
  ***********************************************************************/
 
 using ReservationSystem.Model;
+using ReservationSystem.Repository;
 using System;
 using System.Collections.Generic;
 
@@ -12,37 +13,42 @@ namespace ReservationSystem.Service
 {
    public class HotelService
    {
-      public List<Hotel> GetAll()
-      {
-         // TODO: implement
-         return null;
-      }
+        public HotelRepository hotelRepository;
+
+        public HotelService(HotelRepository hotelRepository)
+        {
+            this.hotelRepository = hotelRepository;
+        }
+
+        public List<Hotel> GetAll()
+        {
+            return this.hotelRepository.GetAll();
+        }
       
-      public Model.Hotel GetById(String id)
-      {
-         // TODO: implement
-         return null;
-      }
+        public Hotel GetById(String id)
+        {
+            return this.hotelRepository.GetById(id);
+        }
       
-      public bool Update(Model.Hotel hotel)
-      {
-         // TODO: implement
-         return false;
-      }
+        public bool Update(Hotel hotel)
+        {
+            // TODO: implement
+            return false;
+        }
       
-      public bool Save(Model.Hotel hotel)
-      {
-         // TODO: implement
-         return false;
-      }
+        public bool Save(Hotel hotel)
+        {
+            if (this.hotelRepository.GetById(hotel.Id) is null)
+            {
+                return this.hotelRepository.Save(hotel); ;
+            }
+            return false;
+        }
       
-      public List<Hotel> GetAllByManager(String managerJMBG)
-      {
-         // TODO: implement
-         return null;
-      }
-   
-      public Repository.HotelRepository hotelRepository;
-   
+        public List<Hotel> GetAllByManager(String managerJMBG)
+        {
+            // TODO: implement
+            return null;
+        } 
    }
 }

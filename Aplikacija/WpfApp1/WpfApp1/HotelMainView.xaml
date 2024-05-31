@@ -1,0 +1,45 @@
+﻿<Page x:Class="ReservationSystem.HotelMainView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ReservationSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HotelMainView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="7,10,0,10" Width="521">
+            <TextBlock Text="Search hotels..." Foreground="LightBlue" Height="24"/>
+            <TextBox x:Name="SearchBox" Width="200" Height="24"/>
+            <Button Content="Search" Click="Search_Click" Height="24" Background="LightBlue" Foreground="White"/>
+            <GroupBox Header="Sort" Margin="10">
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="By Year" Click="SortByConstructionYear_Click" Margin="5" Background="LightBlue" Foreground="White" Width="75"/>
+                    <Button Content="By Rating" Click="SortByStarRating_Click" Margin="5" Background="LightBlue" Foreground="White" Width="75"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" Name="HotelsDataGrid" AutoGenerateColumns="False" 
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="LightBlue"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Construction Year" Binding="{Binding ConstructionYear}" />
+                <DataGridTextColumn Header="Star Rating" Binding="{Binding StarRating}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

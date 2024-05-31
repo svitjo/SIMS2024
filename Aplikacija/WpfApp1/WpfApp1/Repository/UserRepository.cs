@@ -15,7 +15,6 @@ namespace ReservationSystem.Repository
    public class UserRepository
    {
         private String fileLocation;
-
         public UserRepository(string fileLocation)
         {
             this.fileLocation = fileLocation;

@@ -35,7 +35,7 @@ namespace ReservationSystem
 
         private void Hotels_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Test.");
+            MainContent.Navigate(new HotelMainView());
         }
 
         private void Reservation_Click(object sender, RoutedEventArgs e)

@@ -1,8 +1,3 @@
-// File:    AuthService.cs
-// Author:  Veljko
-// Created: 02 May 2022 21:32:16
-// Purpose: Definition of Class AuthService
-
 using ReservationSystem.Model;
 using ReservationSystem.Repository;
 using System;
@@ -31,10 +26,9 @@ namespace ReservationSystem.Service
             currentUser = user;
             return true;
         }
-      
         public void Logout()
         {
             currentUser = null;
         }
-   }
+    }
 }

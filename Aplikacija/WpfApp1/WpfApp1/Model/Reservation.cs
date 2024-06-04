@@ -1,9 +1,3 @@
-/***********************************************************************
- * Module:  Reservation.cs
- * Author:  User
- * Purpose: Definition of the Class Model.Reservation
- ***********************************************************************/
-
 using System;
 
 namespace ReservationSystem.Model

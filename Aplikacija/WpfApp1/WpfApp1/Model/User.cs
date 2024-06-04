@@ -1,15 +1,9 @@
-/***********************************************************************
- * Module:  User.cs
- * Author:  User
- * Purpose: Definition of the Class Model.User
- ***********************************************************************/
-
 using System;
 
 namespace ReservationSystem.Model
-{
+{ 
    public class User
-   {
+    {
         public String Jmbg { get; set; }
         public String Email { get; set; }
         public String Password { get; set; }

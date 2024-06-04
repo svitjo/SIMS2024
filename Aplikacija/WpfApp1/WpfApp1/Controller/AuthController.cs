@@ -1,8 +1,3 @@
-// File:    AuthController.cs
-// Author:  Veljko
-// Created: 02 May 2022 22:17:47
-// Purpose: Definition of Class AuthController
-
 using ReservationSystem.Service;
 using ReservationSystem.Model;
 using System;
@@ -21,7 +16,6 @@ namespace ReservationSystem.Controller
         {
             return this.authService.Login(username, password, out userType);
         }
-      
         public void Logout()
         {
             this.authService.Logout();

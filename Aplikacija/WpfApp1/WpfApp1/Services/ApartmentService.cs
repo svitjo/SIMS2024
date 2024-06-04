@@ -1,10 +1,5 @@
-/***********************************************************************
- * Module:  ApartmentService.cs
- * Author:  User
- * Purpose: Definition of the Class Services.ApartmentService
- ***********************************************************************/
-
 using ReservationSystem.Model;
+using ReservationSystem.Repository;
 using System;
 using System.Collections.Generic;
 
@@ -12,37 +7,36 @@ namespace ReservationSystem.Service
 {
    public class ApartmentService
    {
-      public List<Apartment> GetAll()
-      {
-         // TODO: implement
-         return null;
-      }
-      
-      public Model.Apartment GetById(String name)
-      {
-         // TODO: implement
-         return null;
-      }
-      
-      public bool Save(Model.Apartment apartment)
-      {
-         // TODO: implement
-         return false;
-      }
-      
-      public int Update(Model.Apartment apartment)
-      {
-         // TODO: implement
-         return 0;
-      }
-      
-      public List<Apartment> GetAllByHotel(String id)
-      {
-         // TODO: implement
-         return null;
-      }
-   
-      public Repository.ApartmentRepository apartmentRepository;
-   
-   }
+        public ApartmentRepository apartmentRepository;
+
+        public ApartmentService(ApartmentRepository apartmentRepository)
+        {
+            this.apartmentRepository = apartmentRepository;
+        }
+        public List<Apartment> GetAll()
+        {
+            return this.apartmentRepository.GetAll();
+        }
+        public Apartment GetById(String name)
+        {
+            return this.apartmentRepository.GetById(name);
+        }
+        public bool Save(Apartment apartment)
+        {
+            if (this.apartmentRepository.GetById(apartment.Name) is null)
+            {
+                return this.apartmentRepository.Save(apartment);
+            }
+            return false;
+        }
+        public int Update(Apartment apartment)
+        {
+            // TODO: implement
+            return 0;
+        }
+        public List<Apartment> GetAllByHotel(String id)
+        {
+            return this.apartmentRepository.GetAllByHotel(id);
+        }
+    }
 }

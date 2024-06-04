@@ -1,9 +1,3 @@
-/***********************************************************************
- * Module:  Apartment.cs
- * Author:  User
- * Purpose: Definition of the Class Model.Apartment
- ***********************************************************************/
-
 using System;
 
 namespace ReservationSystem.Model
@@ -15,6 +9,5 @@ namespace ReservationSystem.Model
         public int NumberOfRooms { get; set; }
         public int MaxGuests { get; set; }
         public String HotelID { get; set; }
-
     }
 }

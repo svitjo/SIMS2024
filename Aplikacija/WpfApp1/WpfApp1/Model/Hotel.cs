@@ -1,9 +1,3 @@
-/***********************************************************************
- * Module:  Hotel.cs
- * Author:  User
- * Purpose: Definition of the Class Model.Hotel
- ***********************************************************************/
-
 using System;
 using System.Collections.Generic;
 

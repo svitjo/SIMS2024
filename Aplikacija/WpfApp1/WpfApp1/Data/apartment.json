@@ -1,1 +1,37 @@
-﻿
+﻿[
+  {
+    "Name": "Forget me not",
+    "Description": "Apartman sa trpezarijom",
+    "NumberOfRooms": 2,
+    "MaxGuests": 4,
+    "HotelID": "2"
+  },
+  {
+    "Name": "Peony",
+    "Description": "Apartman sa pogledom na grad",
+    "NumberOfRooms": 3,
+    "MaxGuests": 4,
+    "HotelID": "1"
+  },
+  {
+    "Name": "Rose",
+    "Description": "Apartman sa balkonom",
+    "NumberOfRooms": 2,
+    "MaxGuests": 2,
+    "HotelID": "1"
+  },
+  {
+    "Name": "Lilly",
+    "Description": "Apartman sa balkonom",
+    "NumberOfRooms": 1,
+    "MaxGuests": 2,
+    "HotelID": "2"
+  },
+  {
+    "Name": "White Rose",
+    "Description": "Apartman sa bracnim krevetom",
+    "NumberOfRooms": 2,
+    "MaxGuests": 4,
+    "HotelID": "3"
+  }
+]

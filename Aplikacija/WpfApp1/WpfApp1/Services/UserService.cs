@@ -13,29 +13,24 @@ namespace ReservationSystem.Service
         {
             this.userRepository = userRepository;
         }
-
         public List<User> GetAll()
         {
             return this.userRepository.GetAll();
         }
-      
         public User GetById(String jmbg)
         {
             return this.userRepository.GetById(jmbg);
         }
-      
         public bool Delete(String jmbg)
         {
             // TODO: implement
             return false;
         }
-      
         public bool Update(User user)
         {
             // TODO: implement
             return false;
         }
-      
         public bool Save(User user)
         {
             if (this.userRepository.GetById(user.Jmbg) is null)

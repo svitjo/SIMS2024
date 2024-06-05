@@ -1,1 +1,11 @@
-﻿
+[
+  {
+    "Id": "1",
+    "Date": "2024-06-13T00:00:00",
+    "ApartmentID": "Lilly",
+    "ReservationStatus": 2,
+    "GuestJMBG": "111",
+    "RejectionReason": "",
+    "HotelID": "2"
+  }
+]

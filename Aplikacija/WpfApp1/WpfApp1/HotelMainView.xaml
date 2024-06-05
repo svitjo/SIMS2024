@@ -66,6 +66,13 @@
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
                 <DataGridTextColumn Header="Construction Year" Binding="{Binding ConstructionYear}" />
                 <DataGridTextColumn Header="Star Rating" Binding="{Binding StarRating}" />
+                <DataGridTemplateColumn Header="Details">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="View" Click="ViewButton_Click" Tag="{Binding Id}" Background="LightBlue" Foreground="White"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

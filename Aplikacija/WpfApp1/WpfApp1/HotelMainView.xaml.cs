@@ -19,9 +19,6 @@ using System.Diagnostics;
 
 namespace ReservationSystem
 {
-    /// <summary>
-    /// Interaction logic for HotelMainView.xaml
-    /// </summary>
     public partial class HotelMainView : Page
     {
         private HotelController hotelController;
@@ -119,24 +116,33 @@ namespace ReservationSystem
                 filteredApartments = apartments.Where(a => a.NumberOfRooms == rooms || a.MaxGuests == guests).ToList();
             }
 
-            Debug.WriteLine($"Filtered Apartments Count: {filteredApartments.Count}");
-
             var filteredHotelIds = filteredApartments.Select(a => a.HotelID).Distinct();
-
-            Debug.WriteLine($"Filtered Hotel IDs Count: {filteredHotelIds.Count()}");
-
             filteredHotels = hotels.Where(h => filteredHotelIds.Contains(h.Id)).ToList();
-
-            Debug.WriteLine($"Filtered Hotels Count: {filteredHotels.Count}");
 
             foreach (var hotel in filteredHotels)
             {
                 hotel.Apartments = filteredApartments.Where(a => a.HotelID == hotel.Id).ToList();
-                Debug.WriteLine($"Hotel: {hotel.Name}, Apartments Assigned: {hotel.Apartments.Count}");
             }
 
             HotelsDataGrid.ItemsSource = filteredHotels;
-            Debug.WriteLine("DataGrid assignment complete.");
+        }
+
+        private void ViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                string hotelId = button.Tag.ToString();
+                var hotel = GetHotelById(hotelId);
+
+                HotelDetailView detailView = new HotelDetailView(hotelId);
+                NavigationService.Navigate(detailView);
+            }
+        }
+
+        private Hotel GetHotelById(String id)
+        {
+            return hotelController.GetById(id);
         }
     }
 }

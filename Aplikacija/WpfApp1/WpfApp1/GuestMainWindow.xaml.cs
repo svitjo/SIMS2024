@@ -26,6 +26,7 @@ namespace ReservationSystem
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             authController.Logout();
+            GlobalVariables.CurrentUserEmail = null;
             var window = new MainWindow();
             this.Hide();
             Application.Current.MainWindow = window;

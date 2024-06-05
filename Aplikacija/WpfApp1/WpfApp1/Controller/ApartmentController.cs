@@ -39,5 +39,9 @@ namespace ReservationSystem.Controller
             // TODO: implement
             return false;
         }
+        public List<Apartment> GetAllByHotel(String hotelID)
+        {
+            return this.apartmentService.GetAllByHotel(hotelID);
+        }
     }
 }

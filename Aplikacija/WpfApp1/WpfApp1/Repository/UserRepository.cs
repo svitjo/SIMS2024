@@ -19,6 +19,11 @@ namespace ReservationSystem.Repository
             var values = this.GetAll();
             return values.Find(value => jmbg.Equals(value.Jmbg));
         }
+        public User GetByEmail(String email)
+        {
+            var values = this.GetAll();
+            return values.Find(value => email.Equals(value.Email));
+        }
         public List<User> GetAll()
         {
             var values = JsonConvert.DeserializeObject<List<User>>(File.ReadAllText(fileLocation));

@@ -9,6 +9,7 @@ namespace ReservationSystem.Model
     public enum ReservationStatus
     {
         Approved,
-        Rejected
+        Rejected,
+        OnWait
     }
 }

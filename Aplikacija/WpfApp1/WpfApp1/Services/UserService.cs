@@ -7,7 +7,7 @@ namespace ReservationSystem.Service
 {
     public class UserService
     {
-        public UserRepository userRepository { get; set; }
+        public UserRepository userRepository;
 
         public UserService(UserRepository userRepository)
         {
@@ -35,9 +35,13 @@ namespace ReservationSystem.Service
         {
             if (this.userRepository.GetById(user.Jmbg) is null)
             {
-                return this.userRepository.Save(user); ;
+                return this.userRepository.Save(user);
             }
             return false;
+        }
+        public User GetByEmail(String email)
+        {
+            return this.userRepository.GetByEmail(email);
         }
     }
 }

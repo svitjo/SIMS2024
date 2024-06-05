@@ -28,3 +28,5 @@ C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\net
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\ReservationSystem.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\HotelMainView.g.cs
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\HotelMainView.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\HotelDetailView.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\HotelDetailView.baml

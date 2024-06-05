@@ -40,5 +40,9 @@ namespace ReservationSystem.Controller
             // TODO: implement
             return false;
         }
+        public User GetByEmail(String email)
+        {
+            return this.userService.GetByEmail(email);
+        }
     }
 }

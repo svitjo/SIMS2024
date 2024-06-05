@@ -42,6 +42,7 @@ namespace ReservationSystem
         {
             if (authController.Login(Username_TB.Text, Password_TB.Text, out UserType userType))
             {
+                GlobalVariables.CurrentUserEmail = Username_TB.Text;
                 failedLoginAttempts = 0;
                 OnLoginRedirect(userType);
             }

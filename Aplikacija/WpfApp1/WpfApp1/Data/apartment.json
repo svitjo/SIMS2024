@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Name": "Forget me not",
     "Description": "Apartman sa trpezarijom",
@@ -33,5 +33,12 @@
     "NumberOfRooms": 2,
     "MaxGuests": 4,
     "HotelID": "3"
+  },
+  {
+    "Name": "Ruzmarin",
+    "Description": "Apartman sa pogledom na planinu",
+    "NumberOfRooms": 1,
+    "MaxGuests": 2,
+    "HotelID": "1"
   }
 ]

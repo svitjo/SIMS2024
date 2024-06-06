@@ -7,39 +7,75 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AdminMainWindow.xaml.cs">
+    <Compile Update="View\AdminView\AdminMainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GuestMainWindow.xaml.cs">
+    <Compile Update="View\GuestView\GuestMainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="HotelDetailView.xaml.cs">
+    <Compile Update="View\GuestView\GuestReservationMainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="HotelMainView.xaml.cs">
+    <Compile Update="View\GuestView\HotelDetailView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ManagerMainWindow.xaml.cs">
+    <Compile Update="View\ManagerView\HotelDetailViewManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\GuestView\HotelMainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManagerView\HotelMainViewByManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManagerView\HotelMainViewManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManagerView\ManagerMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManagerView\NewApartmentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManagerView\RejectReason.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AdminMainWindow.xaml">
+    <Page Update="View\AdminView\AdminMainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GuestMainWindow.xaml">
+    <Page Update="View\GuestView\GuestMainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="HotelDetailView.xaml">
+    <Page Update="View\GuestView\GuestReservationMainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="HotelMainView.xaml">
+    <Page Update="View\GuestView\HotelDetailView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManagerView\HotelDetailViewManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\GuestView\HotelMainView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ManagerMainWindow.xaml">
+    <Page Update="View\ManagerView\HotelMainViewByManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManagerView\HotelMainViewManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManagerView\ManagerMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManagerView\NewApartmentWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManagerView\RejectReason.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

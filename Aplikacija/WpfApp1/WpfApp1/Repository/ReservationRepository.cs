@@ -66,5 +66,17 @@ namespace ReservationSystem.Repository
             var filter = values.Find(value => apartmentId.Equals(value.ApartmentID) && date.Date.Equals(value.Date.Date));
             return filter != null;
         }
+        public bool CancelReservation(string id)
+        {
+            var values = this.GetAll();
+            var found = values.FindIndex(value => id.Equals(value.Id));
+            if (found != -1)
+            {
+                values[found].ReservationStatus = ReservationStatus.Cancelled;
+                File.WriteAllText(fileLocation, JsonConvert.SerializeObject(values, Formatting.Indented));
+                return true;
+            }
+            return false;
+        }
     }
 }

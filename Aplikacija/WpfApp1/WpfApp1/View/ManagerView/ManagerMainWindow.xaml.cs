@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReservationSystem.View.ManagerView;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +21,26 @@ namespace ReservationSystem
         public ManagerMainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Hotels_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Navigate(new HotelMainViewManager());
+        }
+
+        private void MyHotels_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Navigate(new HotelMainViewByManager());
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Reservation_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -10,6 +10,7 @@ namespace ReservationSystem.Model
     {
         Approved,
         Rejected,
-        OnWait
+        OnWait,
+        Cancelled
     }
 }

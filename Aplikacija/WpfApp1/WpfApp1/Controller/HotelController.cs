@@ -16,7 +16,7 @@ namespace ReservationSystem.Controller
         {
             return this.hotelService.GetAll();
         }
-        public bool Create(String id, String name, int constructionYear, int starRating, String ownerJMBG)
+        public bool Create(String id, String name, int constructionYear, int starRating, String ownerJMBG, HotelStatus hotelStatus)
         {
             var hotel = new Hotel
             {
@@ -24,7 +24,8 @@ namespace ReservationSystem.Controller
                 Name = name,
                 ConstructionYear = constructionYear,
                 StarRating = starRating,
-                OwnerJMBG = ownerJMBG
+                OwnerJMBG = ownerJMBG,
+                HotelStatus = hotelStatus
             };
 
             return this.hotelService.Save(hotel);
@@ -37,6 +38,10 @@ namespace ReservationSystem.Controller
         {
             // TODO: implement
             return false;
+        }
+        public List<Hotel> GetAllByManager(String managerJMBG)
+        {
+            return this.hotelService.GetAllByManager(managerJMBG);
         }
     }
 }

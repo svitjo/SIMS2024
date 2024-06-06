@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\App.xaml
-6-579265197
+12-1179980489
 
-31595118553
+38797260752
 1931491127308
-AdminMainWindow.xaml;GuestMainWindow.xaml;HotelDetailView.xaml;HotelMainView.xaml;MainWindow.xaml;ManagerMainWindow.xaml;
+MainWindow.xaml;View\AdminView\AdminMainWindow.xaml;View\GuestView\GuestMainWindow.xaml;View\GuestView\GuestReservationMainWindow.xaml;View\GuestView\HotelDetailView.xaml;View\GuestView\HotelMainView.xaml;View\ManagerView\HotelDetailViewManager.xaml;View\ManagerView\HotelMainViewByManager.xaml;View\ManagerView\HotelMainViewManager.xaml;View\ManagerView\ManagerMainWindow.xaml;View\ManagerView\NewApartmentWindow.xaml;View\ManagerView\RejectReason.xaml;
 
-False
+True
 

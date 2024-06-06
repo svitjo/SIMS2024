@@ -11,8 +11,8 @@ using System.Collections.Generic;
 
 namespace ReservationSystem.Controller
 {
-   public class ReservationController
-   {
+    public class ReservationController
+    {
         private ReservationService reservationService;
 
         public ReservationController(ReservationService reservationService)
@@ -23,10 +23,14 @@ namespace ReservationSystem.Controller
         {
             return this.reservationService.GetAll();
         }
-      
+
         public Reservation GetById(String id)
         {
             return this.reservationService.GetById(id);
+        }
+        public List<Reservation> GetAllByGuest(String guestJMBG)
+        {
+            return this.reservationService.GetAllByGuest(guestJMBG);
         }
         public bool DeleteById(String jmbg)
         {
@@ -51,6 +55,41 @@ namespace ReservationSystem.Controller
         public bool ReservationExists(string apartmentId, DateTime date)
         {
             return this.reservationService.ReservationExists(apartmentId, date);
+        }
+        public bool CancelReservation(string reservationId)
+        {
+            return this.reservationService.CancelReservation(reservationId);
+        }
+        public List<Reservation> GetAllByHotel(String hotelID)
+        {
+            return this.reservationService.GetAllByHotel(hotelID);
+        }
+        public void ApproveReservation(string reservationId)
+        {
+            var reservation = reservationService.GetById(reservationId);
+            if (reservation != null)
+            {
+                reservation.ReservationStatus = ReservationStatus.Approved;
+                reservationService.Save(reservation);
+            }
+            else
+            {
+                throw new Exception("Reservation not found.");
+            }
+        }
+        public void RejectReservation(string reservationId, string reason)
+        {
+            var reservation = reservationService.GetById(reservationId);
+            if (reservation != null)
+            {
+                reservation.ReservationStatus = ReservationStatus.Rejected;
+                reservation.RejectionReason = reason;
+                reservationService.Save(reservation);
+            }
+            else
+            {
+                throw new Exception("Reservation not found.");
+            }
         }
     }
 }

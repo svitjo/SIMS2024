@@ -1,0 +1,43 @@
+﻿<Page x:Class="ReservationSystem.HotelDetailViewManager"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ReservationSystem"
+      xmlns:model="clr-namespace:ReservationSystem.Model"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1200"
+      Title="HotelDetailViewManager">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Hotel Details" FontSize="24" FontWeight="Bold" Margin="10"/>
+            <TextBlock Text="Name:" FontWeight="Bold" Margin="10,0,0,0"/>
+            <TextBlock Text="{Binding Name}" FontSize="18" Margin="10,0,0,0"/>
+            <TextBlock Text="Construction Year:" FontWeight="Bold" Margin="10,0,0,0"/>
+            <TextBlock Text="{Binding ConstructionYear}" FontSize="18" Margin="10,0,0,0"/>
+            <TextBlock Text="Star Rating:" FontWeight="Bold" Margin="10,0,0,0"/>
+            <TextBlock Text="{Binding StarRating}" FontSize="18" Margin="10,0,0,0"/>
+
+            <TextBlock Text="Reservations" FontSize="24" FontWeight="Bold" Margin="10"/>
+            <DataGrid Name="ReservationsDataGrid" AutoGenerateColumns="False" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Date" Binding="{Binding Date}" />
+                    <DataGridTextColumn Header="Apartment" Binding="{Binding ApartmentID}" />
+                    <DataGridTextColumn Header="Status" Binding="{Binding ReservationStatus}" />
+                    <DataGridTextColumn Header="Rejection Reason" Binding="{Binding RejectionReason}" />
+                    <DataGridTemplateColumn Header="Action">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Approve" Click="ApproveReservation_Click" Margin="5"/>
+                                    <Button Content="Reject" Click="RejectReservation_Click" Margin="5"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Page>

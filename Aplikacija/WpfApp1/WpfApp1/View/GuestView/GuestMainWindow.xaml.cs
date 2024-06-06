@@ -41,7 +41,7 @@ namespace ReservationSystem
 
         private void Reservation_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Test.");
+            MainContent.Navigate(new GuestReservationMainWindow());
         }
     }
 }

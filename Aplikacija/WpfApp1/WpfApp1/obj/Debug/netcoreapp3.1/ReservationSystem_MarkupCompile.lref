@@ -1,8 +1,14 @@
 ﻿
 
-FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\AdminMainWindow.xaml;;
 FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\MainWindow.xaml;;
-FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\ManagerMainWindow.xaml;;
-FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\HotelMainView.xaml;;
-FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\HotelDetailView.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\AdminView\AdminMainWindow.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\GuestView\GuestReservationMainWindow.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\GuestView\HotelDetailView.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\GuestView\HotelMainView.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\ManagerView\HotelDetailViewManager.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\ManagerView\HotelMainViewByManager.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\ManagerView\HotelMainViewManager.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\ManagerView\ManagerMainWindow.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\ManagerView\NewApartmentWindow.xaml;;
+FC:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\View\ManagerView\RejectReason.xaml;;
 

@@ -11,5 +11,6 @@ namespace ReservationSystem.Model
         public int StarRating { get; set; }
         public String OwnerJMBG { get; set; }
         public List<Apartment> Apartments { get; set; }
+        public HotelStatus HotelStatus { get; set; }
     }
 }

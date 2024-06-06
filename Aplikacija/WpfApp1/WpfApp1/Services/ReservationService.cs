@@ -31,7 +31,7 @@ namespace ReservationSystem.Service
         }
         public List<Reservation> GetAllByHotel(String hotelID)
         {
-            return this.reservationRepository.GetAllByGuest(hotelID);
+            return this.reservationRepository.GetAllByHotel(hotelID);
         }
         public bool Update(Reservation reservation)
         {
@@ -45,6 +45,10 @@ namespace ReservationSystem.Service
         public bool ReservationExists(string apartmentId, DateTime date)
         {
             return this.reservationRepository.ReservationExists(apartmentId, date);
+        }
+        public bool CancelReservation(string reservationId)
+        {
+            return reservationRepository.CancelReservation(reservationId);
         }
     }
 }

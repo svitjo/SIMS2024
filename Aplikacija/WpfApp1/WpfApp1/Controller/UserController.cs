@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 namespace ReservationSystem.Controller
 {
-   public class UserController
-   {
+    public class UserController
+    {
         private UserService userService;
 
         public UserController(UserService userService)
@@ -17,7 +17,7 @@ namespace ReservationSystem.Controller
         {
             return this.userService.GetAll();
         }
-        public bool Create(String jmbg, String email, String password, String firstname, String lastname, String phone)
+        public bool Create(String jmbg, String email, String password, String firstname, String lastname, String phone, UserType userType, bool isBlocked)
         {
             var user = new User
             {
@@ -26,7 +26,9 @@ namespace ReservationSystem.Controller
                 Password = password,
                 Firstname = firstname,
                 Lastname = lastname,
-                Phone = phone
+                Phone = phone,
+                UserType = userType,
+                IsBlocked = isBlocked
             };
 
             return this.userService.Save(user);
@@ -35,14 +37,22 @@ namespace ReservationSystem.Controller
         {
             return this.userService.GetById(jmbg);
         }
-        public bool DeleteById(String jmbg)
-        {
-            // TODO: implement
-            return false;
-        }
         public User GetByEmail(String email)
         {
             return this.userService.GetByEmail(email);
+        }
+        public void Block(string jmbg)
+        {
+            var user = userService.GetById(jmbg);
+            if (user != null)
+            {
+                user.IsBlocked = user.IsBlocked ? false : true;
+                userService.Block(user);
+            }
+            else
+            {
+                throw new Exception("User not found.");
+            }
         }
     }
 }

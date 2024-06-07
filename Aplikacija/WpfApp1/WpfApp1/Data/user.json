@@ -1,21 +1,23 @@
-﻿[
+[
   {
-    "Jmbg": "111",
+    "Jmbg": "123",
     "Email": "admin@gmail.com",
     "Password": "111",
     "Firstname": "admin",
     "Lastname": "admin",
     "Phone": "061",
-    "UserType": "Administrator"
+    "UserType": 0,
+    "IsBlocked": false
   },
   {
-    "Jmbg": "111",
+    "Jmbg": "155",
     "Email": "manager@gmail.com",
     "Password": "111",
     "Firstname": "manager",
     "Lastname": "manager",
     "Phone": "061",
-    "UserType": "Manager"
+    "UserType": 2,
+    "IsBlocked": false
   },
   {
     "Jmbg": "111",
@@ -24,6 +26,27 @@
     "Firstname": "guest",
     "Lastname": "guest",
     "Phone": "061",
-    "UserType": "Guest"
+    "UserType": 1,
+    "IsBlocked": false
+  },
+  {
+    "Jmbg": "500",
+    "Email": "manager2@gmail.com",
+    "Password": "111",
+    "Firstname": "Manager",
+    "Lastname": "2",
+    "Phone": "66666",
+    "UserType": 2,
+    "IsBlocked": false
+  },
+  {
+    "Jmbg": "888",
+    "Email": "manager3@gmail.com",
+    "Password": "111",
+    "Firstname": "Manager",
+    "Lastname": "3",
+    "Phone": "999",
+    "UserType": 2,
+    "IsBlocked": false
   }
 ]

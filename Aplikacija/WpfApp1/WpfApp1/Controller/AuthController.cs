@@ -4,8 +4,8 @@ using System;
 
 namespace ReservationSystem.Controller
 {
-   public class AuthController
-   {
+    public class AuthController
+    {
         private AuthService authService;
 
         public AuthController(AuthService authService)
@@ -19,6 +19,10 @@ namespace ReservationSystem.Controller
         public void Logout()
         {
             this.authService.Logout();
+        }
+        public bool IsBlocked(string username)
+        {
+            return this.authService.IsBlocked(username);
         }
     }
 }

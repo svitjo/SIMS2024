@@ -6,8 +6,8 @@ using System.IO;
 
 namespace ReservationSystem.Repository
 {
-   public class HotelRepository
-   {
+    public class HotelRepository
+    {
         private String fileLocation;
 
         public HotelRepository(string fileLocation)
@@ -37,6 +37,7 @@ namespace ReservationSystem.Repository
                 values.Add(hotel);
                 isSaved = true;
             }
+
             File.WriteAllText(fileLocation, JsonConvert.SerializeObject(values, Formatting.Indented));
             return isSaved;
         }

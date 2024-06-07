@@ -2,8 +2,8 @@ using System;
 
 namespace ReservationSystem.Model
 {
-   public class Apartment
-   {
+    public class Apartment
+    {
         public String Name { get; set; }
         public String Description { get; set; }
         public int NumberOfRooms { get; set; }

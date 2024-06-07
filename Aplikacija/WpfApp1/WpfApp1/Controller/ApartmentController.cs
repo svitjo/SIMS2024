@@ -5,8 +5,8 @@ using ReservationSystem.Service;
 
 namespace ReservationSystem.Controller
 {
-   public class ApartmentController
-   {
+    public class ApartmentController
+    {
         private ApartmentService apartmentService;
 
         public ApartmentController(ApartmentService apartmentService)
@@ -33,11 +33,6 @@ namespace ReservationSystem.Controller
         public Apartment GetById(String name)
         {
             return this.apartmentService.GetById(name);
-        }
-        public bool DeleteById(String jmbg)
-        {
-            // TODO: implement
-            return false;
         }
         public List<Apartment> GetAllByHotel(String hotelID)
         {

@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="AdminMainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center">ADMIN</TextBlock>
+        <DockPanel LastChildFill="True">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Welcome!" IsEnabled="False"/>
+                <MenuItem Header="Hotels" Click="Hotels_Click"/>
+                <MenuItem Header="Users" Click="Users_Click"/>
+                <MenuItem Header="Logout" Click="Logout_Click"/>
+            </Menu>
+            <Frame Name="MainContent" />
+        </DockPanel>
     </Grid>
 </Window>

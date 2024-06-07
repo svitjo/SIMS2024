@@ -21,16 +21,6 @@ namespace ReservationSystem.Service
         {
             return this.userRepository.GetById(jmbg);
         }
-        public bool Delete(String jmbg)
-        {
-            // TODO: implement
-            return false;
-        }
-        public bool Update(User user)
-        {
-            // TODO: implement
-            return false;
-        }
         public bool Save(User user)
         {
             if (this.userRepository.GetById(user.Jmbg) is null)
@@ -42,6 +32,14 @@ namespace ReservationSystem.Service
         public User GetByEmail(String email)
         {
             return this.userRepository.GetByEmail(email);
+        }
+        public bool Block(User user)
+        {
+            if (this.userRepository.GetById(user.Jmbg) is null)
+            {
+                return false;
+            }
+            return this.userRepository.Save(user);
         }
     }
 }

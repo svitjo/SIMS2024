@@ -1,9 +1,3 @@
-/***********************************************************************
- * Module:  GuestRepository.cs
- * Author:  User
- * Purpose: Definition of the Class Repository.GuestRepository
- ***********************************************************************/
-
 using ReservationSystem.Model;
 using ReservationSystem.Service;
 using System;
@@ -23,7 +17,6 @@ namespace ReservationSystem.Controller
         {
             return this.reservationService.GetAll();
         }
-
         public Reservation GetById(String id)
         {
             return this.reservationService.GetById(id);
@@ -31,11 +24,6 @@ namespace ReservationSystem.Controller
         public List<Reservation> GetAllByGuest(String guestJMBG)
         {
             return this.reservationService.GetAllByGuest(guestJMBG);
-        }
-        public bool DeleteById(String jmbg)
-        {
-            // TODO: implement
-            return false;
         }
         public bool Create(String id, DateTime date, String apartmentID, ReservationStatus reservationStatus, String guestJMBG, String rejectionReason, String hotelID)
         {
@@ -70,7 +58,7 @@ namespace ReservationSystem.Controller
             if (reservation != null)
             {
                 reservation.ReservationStatus = ReservationStatus.Approved;
-                reservationService.Save(reservation);
+                reservationService.Approve(reservation);
             }
             else
             {
@@ -84,7 +72,7 @@ namespace ReservationSystem.Controller
             {
                 reservation.ReservationStatus = ReservationStatus.Rejected;
                 reservation.RejectionReason = reason;
-                reservationService.Save(reservation);
+                reservationService.Reject(reservation);
             }
             else
             {

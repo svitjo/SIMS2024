@@ -6,8 +6,8 @@ using Newtonsoft.Json;
 
 namespace ReservationSystem.Repository
 {
-   public class UserRepository
-   {
+    public class UserRepository
+    {
         private String fileLocation;
 
         public UserRepository(string fileLocation)
@@ -49,11 +49,6 @@ namespace ReservationSystem.Repository
             }
             File.WriteAllText(fileLocation, JsonConvert.SerializeObject(values, Formatting.Indented));
             return isSaved;
-        }
-        public bool DeleteById(String id)
-        {
-            // TODO: implement
-            return false;
         }
     }
 }

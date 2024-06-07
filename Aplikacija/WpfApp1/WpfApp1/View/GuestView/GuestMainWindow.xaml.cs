@@ -1,28 +1,18 @@
 ﻿using ReservationSystem.Controller;
-using ReservationSystem.Repository;
-using ReservationSystem.Service;
-using System;
 using System.Windows;
 
 
 namespace ReservationSystem
 {
-    /// <summary>
-    /// Interaction logic for GuestMainWindow.xaml
-    /// </summary>
     public partial class GuestMainWindow : Window
     {
-        private readonly AuthController authController;
-        private readonly AuthService authService;
-        private readonly UserRepository userRepository;
+        private AuthController authController;
+
         public GuestMainWindow()
         {
             InitializeComponent();
-            userRepository = new UserRepository(@"..\..\..\Data\user.json");
-            authService = new AuthService(userRepository);
-            authController = new AuthController(authService);
+            authController = GlobalVariables.AuthController;
         }
-
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             authController.Logout();
@@ -33,12 +23,10 @@ namespace ReservationSystem
             window.Show();
             this.Close();
         }
-
         private void Hotels_Click(object sender, RoutedEventArgs e)
         {
             MainContent.Navigate(new HotelMainView());
         }
-
         private void Reservation_Click(object sender, RoutedEventArgs e)
         {
             MainContent.Navigate(new GuestReservationMainWindow());

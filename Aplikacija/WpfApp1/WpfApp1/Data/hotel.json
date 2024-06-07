@@ -1,26 +1,83 @@
-﻿[
+[
   {
-    "Id": "1",
+    "Id": "Resort2012",
     "Name": "Resort",
-    "ConstructionYear": 2012,
+    "ConstructionYear": 2012.0,
     "StarRating": 4,
-    "OwnerJMBG": "111",
+    "OwnerJMBG": "155",
+    "Apartments": null,
     "HotelStatus": 0
   },
   {
-    "Id": "2",
+    "Id": "Rest2000",
     "Name": "Rest",
-    "ConstructionYear": 2000,
+    "ConstructionYear": 2000.0,
     "StarRating": 5,
-    "OwnerJMBG": "111",
+    "OwnerJMBG": "155",
+    "Apartments": null,
     "HotelStatus": 0
   },
   {
-    "Id": "3",
+    "Id": "HotelCentar2008",
     "Name": "HotelCentar",
-    "ConstructionYear": 2008,
+    "ConstructionYear": 2008.0,
     "StarRating": 3,
-    "OwnerJMBG": "111",
+    "OwnerJMBG": "155",
+    "Apartments": null,
+    "HotelStatus": 0
+  },
+  {
+    "Id": "HotelVojvodina1995",
+    "Name": "HotelVojvodina",
+    "ConstructionYear": 1995.0,
+    "StarRating": 3,
+    "OwnerJMBG": "155",
+    "Apartments": null,
+    "HotelStatus": 0
+  },
+  {
+    "Id": "HotelHajat1995",
+    "Name": "HotelHajat",
+    "ConstructionYear": 1995.0,
+    "StarRating": 5,
+    "OwnerJMBG": "155",
+    "Apartments": null,
+    "HotelStatus": 2
+  },
+  {
+    "Id": "SoleMio2015",
+    "Name": "SoleMio",
+    "ConstructionYear": 2015.0,
+    "StarRating": 4,
+    "OwnerJMBG": "155",
+    "Apartments": null,
+    "HotelStatus": 2
+  },
+  {
+    "Id": "Jasmin2018",
+    "Name": "Jasmin",
+    "ConstructionYear": 2018.0,
+    "StarRating": 4,
+    "OwnerJMBG": "500",
+    "Apartments": null,
+    "HotelStatus": 0
+  },
+  {
+    "Id": "TriSesira2020",
+    "Name": "TriSesira",
+    "ConstructionYear": 2020.0,
+    "StarRating": 2,
+    "OwnerJMBG": "155",
+    "Apartments": null,
+    "HotelStatus": 2
+  },
+  {
+    "Id": "Ekstra2010",
+    "Name": "Ekstra",
+    "ConstructionYear": 2010.0,
+    "StarRating": 4,
+    "OwnerJMBG": "888",
+    "Apartments": null,
     "HotelStatus": 0
   }
 ]

@@ -6,8 +6,8 @@ using System.IO;
 
 namespace ReservationSystem.Repository
 {
-   public class ApartmentRepository
-   {
+    public class ApartmentRepository
+    {
         private String fileLocation;
 
         public ApartmentRepository(string fileLocation)

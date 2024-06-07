@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 namespace ReservationSystem.Service
 {
-   public class ApartmentService
-   {
+    public class ApartmentService
+    {
         public ApartmentRepository apartmentRepository;
 
         public ApartmentService(ApartmentRepository apartmentRepository)
@@ -28,11 +28,6 @@ namespace ReservationSystem.Service
                 return this.apartmentRepository.Save(apartment);
             }
             return false;
-        }
-        public int Update(Apartment apartment)
-        {
-            // TODO: implement
-            return 0;
         }
         public List<Apartment> GetAllByHotel(String id)
         {

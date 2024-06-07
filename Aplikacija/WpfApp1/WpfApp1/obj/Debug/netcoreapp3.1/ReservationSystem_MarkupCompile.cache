@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\App.xaml
-12-1179980489
+171997732214
 
-36293584697
+412104407816
 1931491127308
-MainWindow.xaml;View\AdminView\AdminMainWindow.xaml;View\GuestView\GuestMainWindow.xaml;View\GuestView\GuestReservationMainWindow.xaml;View\GuestView\HotelDetailView.xaml;View\GuestView\HotelMainView.xaml;View\ManagerView\HotelDetailViewManager.xaml;View\ManagerView\HotelMainViewByManager.xaml;View\ManagerView\HotelMainViewManager.xaml;View\ManagerView\ManagerMainWindow.xaml;View\ManagerView\NewApartmentWindow.xaml;View\ManagerView\RejectReason.xaml;
+MainWindow.xaml;View\AdminView\AddHotelWindow.xaml;View\AdminView\AddUserWindow.xaml;View\AdminView\AdminMainWindow.xaml;View\AdminView\HotelMainViewAdmin.xaml;View\AdminView\UserMainWindow.xaml;View\GuestView\GuestMainWindow.xaml;View\GuestView\GuestReservationMainWindow.xaml;View\GuestView\HotelDetailView.xaml;View\GuestView\HotelMainView.xaml;View\ManagerView\HotelDetailViewManager.xaml;View\ManagerView\HotelMainViewByManager.xaml;View\ManagerView\HotelMainViewManager.xaml;View\ManagerView\ManagerMainWindow.xaml;View\ManagerView\ManagerReservationMainWindow.xaml;View\ManagerView\NewApartmentWindow.xaml;View\ManagerView\RejectReason.xaml;
 
 False
 

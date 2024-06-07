@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 namespace ReservationSystem.Controller
 {
-   public class HotelController
-   {
+    public class HotelController
+    {
         private HotelService hotelService;
         public HotelController(HotelService hotelService)
         {
@@ -34,14 +34,35 @@ namespace ReservationSystem.Controller
         {
             return this.hotelService.GetById(id);
         }
-        public bool DeleteById(String jmbg)
-        {
-            // TODO: implement
-            return false;
-        }
         public List<Hotel> GetAllByManager(String managerJMBG)
         {
             return this.hotelService.GetAllByManager(managerJMBG);
+        }
+        public void AcceptHotel(string hoteId)
+        {
+            var hotel = hotelService.GetById(hoteId);
+            if (hotel != null)
+            {
+                hotel.HotelStatus = HotelStatus.Accepted;
+                hotelService.Approve(hotel);
+            }
+            else
+            {
+                throw new Exception("hotel not found.");
+            }
+        }
+        public void RejectHotel(string hoteId)
+        {
+            var hotel = hotelService.GetById(hoteId);
+            if (hotel != null)
+            {
+                hotel.HotelStatus = HotelStatus.Accepted;
+                hotelService.Reject(hotel);
+            }
+            else
+            {
+                throw new Exception("Hotel not found.");
+            }
         }
     }
 }

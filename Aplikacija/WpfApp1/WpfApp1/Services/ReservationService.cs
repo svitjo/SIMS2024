@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 namespace ReservationSystem.Service
 {
-   public class ReservationService
-   {
+    public class ReservationService
+    {
         public ReservationRepository reservationRepository;
 
         public ReservationService(ReservationRepository reservationRepository)
@@ -33,11 +33,6 @@ namespace ReservationSystem.Service
         {
             return this.reservationRepository.GetAllByHotel(hotelID);
         }
-        public bool Update(Reservation reservation)
-        {
-            // TODO: implement
-            return false;
-        }
         public Reservation GetById(String id)
         {
             return this.reservationRepository.GetById(id);
@@ -49,6 +44,22 @@ namespace ReservationSystem.Service
         public bool CancelReservation(string reservationId)
         {
             return reservationRepository.CancelReservation(reservationId);
+        }
+        public bool Approve(Reservation reservation)
+        {
+            if (this.reservationRepository.GetById(reservation.Id) is null)
+            {
+                return false;
+            }
+            return this.reservationRepository.Save(reservation);
+        }
+        public bool Reject(Reservation reservation)
+        {
+            if (this.reservationRepository.GetById(reservation.Id) is null)
+            {
+                return false;
+            }
+            return this.reservationRepository.Save(reservation);
         }
     }
 }

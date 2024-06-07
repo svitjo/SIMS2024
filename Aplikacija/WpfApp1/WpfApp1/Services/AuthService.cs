@@ -3,8 +3,8 @@ using ReservationSystem.Repository;
 
 namespace ReservationSystem.Service
 {
-   public class AuthService
-   {
+    public class AuthService
+    {
         public UserRepository userRepository;
         private User currentUser;
 
@@ -28,6 +28,11 @@ namespace ReservationSystem.Service
         public void Logout()
         {
             currentUser = null;
+        }
+        public bool IsBlocked(string username)
+        {
+            var user = userRepository.GetByEmail(username);
+            return user != null && user.IsBlocked;
         }
     }
 }

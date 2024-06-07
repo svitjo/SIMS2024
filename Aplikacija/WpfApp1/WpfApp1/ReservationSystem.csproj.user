@@ -7,7 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\AdminView\AddHotelWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminView\AddUserWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AdminView\AdminMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminView\HotelMainViewAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminView\UserMainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\GuestView\GuestMainWindow.xaml.cs">
@@ -34,6 +46,9 @@
     <Compile Update="View\ManagerView\ManagerMainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\ManagerView\ManagerReservationMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ManagerView\NewApartmentWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -42,7 +57,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="View\AdminView\AddHotelWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminView\AddUserWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\AdminView\AdminMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminView\HotelMainViewAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminView\UserMainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\GuestView\GuestMainWindow.xaml">
@@ -70,6 +97,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ManagerView\ManagerMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManagerView\ManagerReservationMainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ManagerView\NewApartmentWindow.xaml">

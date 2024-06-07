@@ -40,5 +40,12 @@
     "NumberOfRooms": 1,
     "MaxGuests": 2,
     "HotelID": "1"
+  },
+  {
+    "Name": "Jasmin",
+    "Description": "Apartman sa dozvolom za ljubimce",
+    "NumberOfRooms": 3,
+    "MaxGuests": 5,
+    "HotelID": "Jasmin2018"
   }
 ]

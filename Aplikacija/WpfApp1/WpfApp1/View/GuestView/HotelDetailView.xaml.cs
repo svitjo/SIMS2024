@@ -1,57 +1,30 @@
 ﻿using ReservationSystem.Controller;
 using ReservationSystem.Model;
-using ReservationSystem.Repository;
-using ReservationSystem.Service;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ReservationSystem
 {
     public partial class HotelDetailView : Page
     {
         private HotelController hotelController;
-        private readonly HotelService hotelService;
-        private readonly HotelRepository hotelRepository;
         private ApartmentController apartmentController;
-        private readonly ApartmentService apartmentService;
-        private readonly ApartmentRepository apartmentRepository;
-        private readonly ReservationController reservationController;
-        private readonly ReservationService reservationService;
-        private readonly ReservationRepository reservationRepository;
-        private readonly UserController userController;
-        private readonly UserService userService;
-        private readonly UserRepository userRepository;
+        private ReservationController reservationController;
+        private UserController userController;
         private string currentHotelId;
+        private bool _isDateSelected;
 
         public HotelDetailView(String id)
         {
             InitializeComponent();
-            hotelRepository = new HotelRepository(@"..\..\..\Data\hotel.json");
-            hotelService = new HotelService(hotelRepository);
-            hotelController = new HotelController(hotelService);
-            apartmentRepository = new ApartmentRepository(@"..\..\..\Data\apartment.json");
-            apartmentService = new ApartmentService(apartmentRepository);
-            apartmentController = new ApartmentController(apartmentService);
-            reservationRepository = new ReservationRepository(@"..\..\..\Data\reservation.json");
-            reservationService = new ReservationService(reservationRepository);
-            reservationController = new ReservationController(reservationService);
-            userRepository = new UserRepository(@"..\..\..\Data\user.json");
-            userService = new UserService(userRepository);
-            userController = new UserController(userService);
+            hotelController = GlobalVariables.HotelController;
+            apartmentController = GlobalVariables.ApartmentController;
+            reservationController = GlobalVariables.ReservationController;
+            userController = GlobalVariables.UserController;
             currentHotelId = id;
             LoadHotelData(id);
         }
-
         private void LoadHotelData(String id)
         {
             var hotel = hotelController.GetById(id);
@@ -65,7 +38,6 @@ namespace ReservationSystem
                 MessageBox.Show("Hotel not found");
             }
         }
-        private bool _isDateSelected;
         public bool IsDateSelected
         {
             get { return _isDateSelected; }
@@ -99,7 +71,7 @@ namespace ReservationSystem
             }
             else
             {
-                reservationController.Create("1", selectedDate, apartment.Name, ReservationStatus.OnWait, user.Jmbg, "", currentHotelId);
+                reservationController.Create(selectedDate + apartment.Name, selectedDate, apartment.Name, ReservationStatus.OnWait, user.Jmbg, "", currentHotelId);
                 MessageBox.Show("Reservation successful.");
             }
         }

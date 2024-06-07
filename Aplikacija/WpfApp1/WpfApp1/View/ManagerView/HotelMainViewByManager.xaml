@@ -12,9 +12,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <DataGrid Grid.Row="1" Name="HotelsDataGrid" AutoGenerateColumns="False" Margin="0,41,0,0">
+        <DataGrid Grid.Row="1" Name="HotelsDataGrid" AutoGenerateColumns="False" Margin="0,41,0,189">
             <DataGrid.Resources>
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="Background" Value="LightBlue"/>
@@ -38,6 +39,25 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Content="New" Tag="{Binding Id}" Click="NewButton_Click" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Grid.Row="1" Name="OtherStatusHotelsDataGrid" AutoGenerateColumns="False" Margin="0,269,0,0" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Construction Year" Binding="{Binding ConstructionYear}" />
+                <DataGridTextColumn Header="Star Rating" Binding="{Binding StarRating}" />
+                <DataGridTemplateColumn Header="Action">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Accept" Click="AcceptButton_Click"/>
+                                <Button Content="Reject" Click="RejectButton_Click"/>
+                            </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

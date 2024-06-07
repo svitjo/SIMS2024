@@ -1,46 +1,24 @@
 ﻿using ReservationSystem.Controller;
-using ReservationSystem.Model;
-using ReservationSystem.Repository;
-using ReservationSystem.Service;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Linq;
+using ReservationSystem.Model;
 
 namespace ReservationSystem
 {
-    /// <summary>
-    /// Interaction logic for GuestReservationMainWindow.xaml
-    /// </summary>
     public partial class GuestReservationMainWindow : Page
     {
         private readonly ReservationController reservationController;
-        private readonly ReservationService reservationService;
-        private readonly ReservationRepository reservationRepository;
         private readonly UserController userController;
-        private readonly UserService userService;
-        private readonly UserRepository userRepository;
         private List<Reservation> allReservations;
         private ReservationStatus? selectedStatus;
 
         public GuestReservationMainWindow()
         {
             InitializeComponent();
-            reservationRepository = new ReservationRepository(@"..\..\..\Data\reservation.json");
-            reservationService = new ReservationService(reservationRepository);
-            reservationController = new ReservationController(reservationService);
-            userRepository = new UserRepository(@"..\..\..\Data\user.json");
-            userService = new UserService(userRepository);
-            userController = new UserController(userService);
+            reservationController = GlobalVariables.ReservationController;
+            userController = GlobalVariables.UserController;
             LoadReservations();
         }
         private void LoadReservations()

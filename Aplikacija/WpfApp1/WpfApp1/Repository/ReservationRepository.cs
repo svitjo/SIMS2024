@@ -6,8 +6,8 @@ using System.IO;
 
 namespace ReservationSystem.Repository
 {
-   public class ReservationRepository
-   {
+    public class ReservationRepository
+    {
         private String fileLocation;
 
         public ReservationRepository(string fileLocation)
@@ -49,11 +49,6 @@ namespace ReservationSystem.Repository
         {
             var values = this.GetAll();
             return values.FindAll(value => hotelID.Equals(value.HotelID));
-        }
-        public bool Update(Model.Reservation reservation)
-        {
-            // TODO: implement
-            return false;
         }
         public Reservation GetById(String id)
         {

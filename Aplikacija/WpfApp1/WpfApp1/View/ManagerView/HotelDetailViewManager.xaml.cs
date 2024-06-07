@@ -2,56 +2,25 @@
 using ReservationSystem.Repository;
 using ReservationSystem.Service;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Linq;
 using ReservationSystem.Model;
 using ReservationSystem.View.ManagerView;
 
 namespace ReservationSystem
 {
-    /// <summary>
-    /// Interaction logic for HotelDetailViewManager.xaml
-    /// </summary>
     public partial class HotelDetailViewManager : Page
     {
         private HotelController hotelController;
-        private readonly HotelService hotelService;
-        private readonly HotelRepository hotelRepository;
-        private ApartmentController apartmentController;
-        private readonly ApartmentService apartmentService;
-        private readonly ApartmentRepository apartmentRepository;
         private readonly ReservationController reservationController;
-        private readonly ReservationService reservationService;
-        private readonly ReservationRepository reservationRepository;
-        private readonly UserController userController;
-        private readonly UserService userService;
-        private readonly UserRepository userRepository;
         private string currentHotelId;
+
         public HotelDetailViewManager(String id)
         {
             InitializeComponent();
-            hotelRepository = new HotelRepository(@"..\..\..\Data\hotel.json");
-            hotelService = new HotelService(hotelRepository);
-            hotelController = new HotelController(hotelService);
-            apartmentRepository = new ApartmentRepository(@"..\..\..\Data\apartment.json");
-            apartmentService = new ApartmentService(apartmentRepository);
-            apartmentController = new ApartmentController(apartmentService);
-            reservationRepository = new ReservationRepository(@"..\..\..\Data\reservation.json");
-            reservationService = new ReservationService(reservationRepository);
-            reservationController = new ReservationController(reservationService);
-            userRepository = new UserRepository(@"..\..\..\Data\user.json");
-            userService = new UserService(userRepository);
-            userController = new UserController(userService);
+            hotelController = GlobalVariables.HotelController;
+            reservationController = GlobalVariables.ReservationController;
             currentHotelId = id;
             LoadHotelData(id);
         }
@@ -77,7 +46,6 @@ namespace ReservationSystem
                 MessageBox.Show("Hotel not found");
             }
         }
-    
         private void ApproveReservation_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.DataContext is Reservation reservation)

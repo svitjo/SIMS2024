@@ -1,11 +1,29 @@
 [
   {
-    "Id": "1",
-    "Date": "2024-06-13T00:00:00",
-    "ApartmentID": "Lilly",
-    "ReservationStatus": 3,
+    "Id": "11/06/2024 00:00:00Forget me not",
+    "Date": "2024-06-11T00:00:00",
+    "ApartmentID": "Forget me not",
+    "ReservationStatus": 0,
     "GuestJMBG": "111",
     "RejectionReason": "",
     "HotelID": "2"
+  },
+  {
+    "Id": "17/06/2024 00:00:00White Rose",
+    "Date": "2024-06-17T00:00:00",
+    "ApartmentID": "White Rose",
+    "ReservationStatus": 1,
+    "GuestJMBG": "111",
+    "RejectionReason": "Zakazano mejlom!",
+    "HotelID": "3"
+  },
+  {
+    "Id": "14/06/2024 00:00:00Jasmin",
+    "Date": "2024-06-14T00:00:00",
+    "ApartmentID": "Jasmin",
+    "ReservationStatus": 1,
+    "GuestJMBG": "111",
+    "RejectionReason": "Zakazano telefonom!",
+    "HotelID": "Jasmin2018"
   }
 ]

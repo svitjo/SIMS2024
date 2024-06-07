@@ -42,3 +42,13 @@ C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\net
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\ManagerView\RejectReason.g.cs
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\ManagerView\NewApartmentWindow.baml
 C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\ManagerView\RejectReason.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\ManagerView\ManagerReservationMainWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\ManagerView\ManagerReservationMainWindow.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\AddHotelWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\HotelMainViewAdmin.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\UserMainWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\AddHotelWindow.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\HotelMainViewAdmin.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\UserMainWindow.baml
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\AddUserWindow.g.cs
+C:\Users\User\Documents\GitHub\SIMS2024\Aplikacija\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\View\AdminView\AddUserWindow.baml

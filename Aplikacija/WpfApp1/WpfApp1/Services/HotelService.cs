@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 namespace ReservationSystem.Service
 {
-   public class HotelService
-   {
+    public class HotelService
+    {
         public HotelRepository hotelRepository;
 
         public HotelService(HotelRepository hotelRepository)
@@ -21,11 +21,6 @@ namespace ReservationSystem.Service
         {
             return this.hotelRepository.GetById(id);
         }
-        public bool Update(Hotel hotel)
-        {
-            // TODO: implement
-            return false;
-        }
         public bool Save(Hotel hotel)
         {
             if (this.hotelRepository.GetById(hotel.Id) is null)
@@ -37,6 +32,22 @@ namespace ReservationSystem.Service
         public List<Hotel> GetAllByManager(String managerJMBG)
         {
             return this.hotelRepository.GetAllByManager(managerJMBG);
+        }
+        public bool Approve(Hotel hotel)
+        {
+            if (this.hotelRepository.GetById(hotel.Id) is null)
+            {
+                return false;
+            }
+            return this.hotelRepository.Save(hotel);
+        }
+        public bool Reject(Hotel hotel)
+        {
+            if (this.hotelRepository.GetById(hotel.Id) is null)
+            {
+                return false;
+            }
+            return this.hotelRepository.Save(hotel);
         }
     }
 }
